@@ -1,0 +1,17 @@
+.card-detail {
+    width: 22rem;
+    margin: 10px;
+    background-color: #EBFFF3;
+    border-radius: 10px;
+}
+
+.card-body {
+    margin: 10px;
+}
+.btn-custom{
+    background-color: #acd2bc;;
+}
+
+img {
+    border-radius: 10px;
+}

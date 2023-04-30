@@ -1,0 +1,10 @@
+.card {
+    width: 18rem;
+    margin: 10px;
+    background-color: #EBFFF3;
+    min-height: 410px;
+}
+
+.btn-custom{
+    background-color: #acd2bc;;
+}
