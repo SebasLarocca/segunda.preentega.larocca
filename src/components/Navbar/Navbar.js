@@ -4,7 +4,7 @@ import { CartWidget } from './CartWidget';
 import { DropdownItem } from './DropdownItem';
 
 
-function Navbar({cart} ) {
+function Navbar() {
 
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top">
@@ -32,7 +32,7 @@ function Navbar({cart} ) {
 
         </div>
       </div>
-      <CartWidget cart={cart}/>
+      <CartWidget />
     </nav>
   );
 }

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import cartSvg from './Assets/cart.svg'
 
-export const CartWidget = ({cart}) => {
+
+let cartLocalStorage = JSON.parse(localStorage.getItem('Cart'));
+
+export const CartWidget = () => {
+    const [cartCantidad, setCartCantidad] = useState(cartLocalStorage);
+    
     return (
         <>
-            <img src={cartSvg} className="cart-icon" alt='producto'/>
-            <h4 className="cart-cantidad">{cart}</h4>
+            <Link to={'/orders'} ><img src={cartSvg} className="cart-icon" alt='producto' /></Link>
+            <h4 className="cart-cantidad"></h4>
         </>
     )
 }

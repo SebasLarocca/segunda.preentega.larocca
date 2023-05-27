@@ -1,3 +1,4 @@
+// Este componente no está siendo renderizado por ninguna vista 
 import './ItemListContainer.css'
 
 export const ItemListContainer = ({url, titulo, descripcion, textoBotonResta, textoBotonSuma, sumaItemCarrito, restaItemCarrito}) => {

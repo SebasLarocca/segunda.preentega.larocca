@@ -5,3 +5,4 @@ export const DropdownItem = ({nombre}) => {
     <li><a class="dropdown-item" href={`/category/${nombre}`}>{nombre}</a></li>
   )
 }
+  
