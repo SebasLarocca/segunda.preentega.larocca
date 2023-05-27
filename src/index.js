@@ -11,6 +11,7 @@ import { initializeApp } from "firebase/app";
 import { CartContext } from './components/context/UseContext';
 import { CartProvider } from './components/CartProvider/CartProvider';
 import { Orders } from './components/Orders/Orders';
+import { Random } from './components/Random/Random';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -39,6 +40,7 @@ root.render(
                         <Route path='/item/:id' element={<ItemDetailContainer />} />
                         <Route path='/category/:id' element={<ItemContainer />} />
                         <Route path='/orders' element={<Orders />} />
+                        <Route path='/random' element={<Random />} />
                         <Route path='/*' element={<h1>Not found</h1>} />
                   </Routes>
             </CartProvider>

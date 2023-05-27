@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ItemList } from '../ItemList/ItemList'
 //import { getProducts, getProductByCategory } from '../asyncMock';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 export const ItemContainer = () => {
@@ -28,6 +28,7 @@ export const ItemContainer = () => {
   return (
     <>
       {products ?
+       
         <ItemList products={products} />
         :
         <h1>Loading...</h1>}
