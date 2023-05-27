@@ -10,8 +10,9 @@ export const CartWidget = () => {
     
     return (
         <>
-            <Link to={'/orders'} ><img src={cartSvg} className="cart-icon" alt='producto' /></Link>
+            <a href={'/orders'} ><img src={cartSvg} className="cart-icon" alt='producto' /></a>
             <h4 className="cart-cantidad"></h4>
         </>
     )
 }
+
